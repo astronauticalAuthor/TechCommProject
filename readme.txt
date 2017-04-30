@@ -1,1 +1,0 @@
-This is a website for my Technical Communications class. It is a reflection of my professional, though a bit rushed, work.

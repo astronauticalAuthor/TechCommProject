@@ -1,0 +1,40 @@
+body {
+	user-select: none;
+}
+
+#board {
+	border: 2px solid #727272;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 269px;
+	height: 400px;
+}
+
+.column {
+	height: 400px;
+	width: 66px;
+	border: 1px solid #d6d6d6;
+	display: inline-block;
+	margin-right: -5px;
+	margin-top: -1px;
+	overflow: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+.airButton {
+	width: 64px;
+	height: 64px;
+	background-image: url('../images/airIcon.png');
+	border: 1px solid black;
+	margin-top: -100px;
+	float: left;
+	vertical-align: top;
+	position: fixed;
+	border-radius: 100%;
+	margin-left: 1px;
+}
+
+#level {
+
+}
