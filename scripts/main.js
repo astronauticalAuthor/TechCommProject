@@ -18,11 +18,10 @@ function createIcon() {
 	}
 
 	var colNumber = Math.floor(Math.random() * 4);
-	var newElement = '<button class="airButton" id="' + id + '" onclick="successRemove(' + id + ')">&nbsp</button>';
-
-
+	var newElement = '<div class="airButton" id="' + id + '">&nbsp</div>';
 
 	$('.column').eq(colNumber).append(newElement);
+	$('#' + id).mousedown(successRemove);
 
 	fall(id);
 }
@@ -39,6 +38,6 @@ function fall(id) {
 	}
 }
 
-function successRemove(id) {
-	id.remove();
+function successRemove() {
+	$(this).remove();
 }
